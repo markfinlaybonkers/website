@@ -18,7 +18,7 @@ end
 run "bundle install"
 
 # Configure the app to serve Ember.js and app assets from an AssetsController
-generate "ember:bootstrap"
+generate "ember:bootstrap --javascript-engine js"
 generate "ember:install"
 generate :controller, "Assets", "index"
 run "rm app/views/assets/index.html.erb"
